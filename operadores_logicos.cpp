@@ -1,9 +1,13 @@
+//inserindo bibliotecas
 #include <iostream>
 using namespace std;
-
+//inicio de codigo
 int main() {
+    //inserindo variavel e valor de "a" 
     int a = 5;
+    //inserindo variavel e valor de "b"
     int b = 10;
+    //inserindo variavel e valor de "c"
     int c = 15;
     
     //exemplo de uso do operador AND (&&)
