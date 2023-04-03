@@ -9,7 +9,7 @@ int main () {
     char pergunta = 's';
     //declaração de variavel num1 e num2
     float num1, num2;
-    while(pergunta = 's'){
+    while(pergunta == 's'){
     //interface de usuario com operador
     cout << "ENTRE COM O OPERADOR: +, -, *, /:";
     //operador declarado
