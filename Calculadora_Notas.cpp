@@ -6,7 +6,13 @@ using namespace std;
 int main() {
     //inserindo variaveis para a formula
     double nota1, nota2, nota3, nota4;
+    //inserindo variavel char
+    char op;
+    //declarando valor da variavel char
+    char pergunta = 's';
     //inserir variavel nota1
+    while (pergunta == 's') {
+    //
     cout << "Digite a sua primeira nota do semestre >>>";
     //variavel nota1 pronta
     cin >> nota1;
@@ -28,10 +34,15 @@ int main() {
     //resultado do calculo
     cout << "A sua media do semestre foi:" << soma << endl << endl;
     //condições de aprovação e reprova
-    if (soma >= 7) {
+    if (soma >= 7) {//Soma igual ou maior a 7
         cout << "Parabéns! Você foi aprovado!" << endl;
-    }else{
-        cout << "Eita! Você foi reprovado!" << endl;
-    }
+    }else if (soma >=5 && soma <7) {//soma menor que 7 e maior ou igual a 5
+        cout << "Quase lá! Você ficou de recuperação" << endl;
+    }else{ //soma menor que 5
+        cout << "Eita! Você foi reprovado!" << endl;}
+        cout << "Continuar? ";
+        cin >> pergunta;
+}
+
     return 0;
 }
